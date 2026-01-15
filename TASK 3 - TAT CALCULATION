@@ -1,1 +1,2 @@
+DATETIME_DIFF({Mail Sent At}, {Added On}, 'minutes')
 
