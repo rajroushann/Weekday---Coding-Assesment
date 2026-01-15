@@ -8,7 +8,7 @@ The goal is to reduce manual effort, improve reliability, and enable scalable in
 ---
 
 ## Tech Stack
-- Airtable (Database, Automations, Run Script)
+- Airtable (Automations, Run Script)
 - MailerSend API (Email delivery)
 - JavaScript (Airtable scripting)
 
@@ -40,7 +40,7 @@ Clean, normalized data stored in the `Interview_Rounds_Clean` table.
 Manual interview email communication is time-consuming and error-prone.
 
 ### Solution
-MailerSend API is integrated with Airtable Automations to send interview invitations automatically.
+MailerSend API is integrated with Airtable Automations to send interview invitations email automatically.
 
 ### Key Features
 - Triggered when a new interview round record is created
@@ -60,4 +60,5 @@ There is no visibility into how quickly candidates are contacted.
 The system records the email sent timestamp and calculates TAT using an Airtable formula.
 
 ### Formula
+TAT = Mail Sent At – Added On
 
